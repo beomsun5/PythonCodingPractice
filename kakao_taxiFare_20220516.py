@@ -1,6 +1,6 @@
 ''' My Solution
 # Step 1 : Find the shortest path from the starting point
-# Step 2 : Traverse the vertices except A and B, then set each vertex as the new starting point and find its shortest path
+# Step 2 : Traverse every vertex and set each of them as the new starting point and find its shortest path
 # Step 3 : Get the sum of each fare (A and B together, A alone, B alone) and compare it to the minimum fare.
 #          If the sum is less than the previous result, this result becomes the minimum fare.
 import sys
@@ -76,7 +76,7 @@ n, s, a, b = 6, 4, 6, 2
 fares = [[4, 1, 10], [3, 5, 24], [5, 6, 2], [3, 1, 41], [5, 1, 24], [4, 6, 50], [2, 4, 66], [2, 3, 22], [1, 6, 25]]
 print(solution(n, s, a, b, fares))
 '''
-# Other solution (Using Warshall-Floyd)
+# Other solution (Using Warshall-Floyd) - Need not making new function, less code
 import sys
 import heapq
 
